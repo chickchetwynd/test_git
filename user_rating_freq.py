@@ -1,5 +1,4 @@
-from _csv import reader
-import csv
+from csv import *
 file_path = '/Users/chiggy/PycharmProjects/test_git/AppleStore.csv'
 opened_file = open(file_path)
 read_file = reader(opened_file)
