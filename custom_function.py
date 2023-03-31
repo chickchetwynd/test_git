@@ -11,7 +11,7 @@ def extract(index):
         column.append(value)
     return column
 
-# extracting the values for the CSV "prime genre" column as a list.
+# extracting the values for the CSV "prime genre" column as a list named "genres".
 genres = extract(11)
 
 
