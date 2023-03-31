@@ -28,3 +28,20 @@ def freq_table(list):
 genres_ft = freq_table(genres)
 
 print(genres_ft)
+
+
+# This following custom function does the same thing as above except it combines the two functions into one.
+
+def freq_table(index):
+    result = {}
+    for row in apps_data[1:]:
+        value = row[index]
+        if value in result:
+            result[value] += 1
+        else:
+            result[value] = 1
+    return result
+
+ratings_ft = freq_table(7)
+
+print(ratings_ft)
